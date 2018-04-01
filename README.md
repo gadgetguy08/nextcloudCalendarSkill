@@ -23,7 +23,7 @@ Manual Method not for Mark1
 -------------------
 
     cd  /opt/mycroft/skills
-    git clone https://github.com/gadgetguy/nextcloudCalendarSkill.git
+    git clone https://github.com/gadgetguy08/nextcloudCalendarSkill.git
     workon mycroft (Only if you have installed Mycroft on Virtualenv)
     cd nextcloudCalendarSkill
     sudo pip install -r requirements.txt
