@@ -1,8 +1,8 @@
-**GoogleCalendarSkill with add events **
+**NextCloudCalendarSkill with add events **
 ===================
 
 For Mycroft
-An skill to use with Mycroft which allow to interact with google calendar.
+An skill to use with Mycroft which allow to interact with NextCloud calendar.
 Now is possible to add events with a lot of intents
 
 ----------
@@ -12,7 +12,7 @@ Now is possible to add events with a lot of intents
 Install Using MSM (Mycroft Skill Manager)  not for Mark1
 -------------------
 
-    msm install https://github.com/jcasoft/GoogleCalendarSkill.git
+    msm install https://github.com/gadgetguy08/nextcloudCalendarSkill.git
 
 
 If it does not work with the MSM method try it with the manual method
@@ -23,26 +23,26 @@ Manual Method not for Mark1
 -------------------
 
     cd  /opt/mycroft/skills
-    git clone https://github.com/jcasoft/GoogleCalendarSkill.git
+    git clone https://github.com/gadgetguy/nextcloudCalendarSkill.git
     workon mycroft (Only if you have installed Mycroft on Virtualenv)
-    cd GoogleCalendarSkill
+    cd nextcloudCalendarSkill
     sudo pip install -r requirements.txt
 
 
-Authorize Google Calendar not for Mark1 after install
+Authorize NextCloud Calendar not for Mark1 after install
 -------------------
 
-Authorize Google Calendar Skill in distro with local web browser, wait web browse open and select "Allow"
+Authorize NextCloud Calendar Skill in distro with local web browser, wait web browse open and select "Allow"
 
     From your command line go to mycroft skills folder
 
     cd  /opt/mycroft/skills
     workon mycroft
-    python GoogleCalendarSkill
+    python nextcloudCalendarSkill
 
 
 Edit your mycroft.conf
-on "GoogleCalendarSkill"  edit your options (added automatically)
+on "nextcloudCalendarSkill"  edit your options (added automatically)
 
      cd /home/mycroft/.mycroft
      sudo nano mycroft.conf
@@ -56,42 +56,42 @@ Manual Method for Mark1
     open SSH session
 
     cd  /opt/mycroft/skills
-    git clone https://github.com/jcasoft/GoogleCalendarSkill.git
-    cd GoogleCalendarSkill
+    git clone https://github.com/gadgetguy08/nextcloudCalendarSkill.git
+    cd nextcloudCalendarSkill
     sudo pip install -r requirements.txt
 
 
-Authorize Google Calendar for Mark1  after install
+Authorize NextCloud Calendar for Mark1  after install
 -------------------
 	
-Authorize GoogleCalendarSkill in Mark1 without local web browser
+Authorize nextcloudCalendarSkill in Mark1 without local web browser
 
     open SSH session
 
     From your command line go to mycroft skills folder
 
     cd  /opt/mycroft/skills
-    python GoogleCalendarSkill --noauth_local_webserver
+    python nextcloudCalendarSkill --noauth_local_webserver
 
 Open the generated link in computer with browser and wait the verification code and paste
 
      Enter verification code: 4/oxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   
 
 
-The installation process generates automatically the file ~/.mycroft/mycroft.conf and ~/.credentials/mycroft-googlecalendar-skill.json
+The installation process generates automatically the file ~/.mycroft/mycroft.conf and ~/.credentials/mycroft-nextcloudcalendar-skill.json
 
 
 Then copy the following files and fix the permissions
 
      sudo mkdir /home/mycroft/.credentials
-     sudo cp /home/pi/.credentials/mycroft-googlecalendar-skill.json /home/mycroft/.credentials/mycroft-googlecalendar-skill.json
+     sudo cp /home/pi/.credentials/mycroft-nextcloudcalendar-skill.json /home/mycroft/.credentials/mycroft-nextcloudcalendar-skill.json
      sudo chmod -R 777 /home/mycroft/.credentials
 
      sudo cp /home/pi/.mycroft/mycroft.conf /home/mycroft/.mycroft/mycroft.conf
      sudo chmod -R 777 /home/mycroft/.mycroft
 
 Edit your mycroft.conf
-on "GoogleCalendarSkill"  edit your options (added automatically)
+on "nextcloudCalendarSkill"  edit your options (added automatically)
 
      cd /home/mycroft/.mycroft
      sudo nano mycroft.conf
